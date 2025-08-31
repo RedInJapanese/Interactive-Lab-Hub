@@ -128,16 +128,18 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
-
+- Multiple people felt that the constant switching between white and black for the lights could be too distracting, especially if many people are entering and exiting within a short window. The constant change in lights could also be very damanging to the eyes. 
+- Adding clustering features could be interesting(if a player goes to a corner of the room, then the light flickers) 
 
 ## Part B. Act out the Interaction
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
-
+- As mentioned before, the rapid changes between white and black light was very distracting and can be overstiumlating for a person's eyes(especially for conditions like epilepsy). The strobe effect was also overstiumlating, which drew attention away from the actual interaction.
 \*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
-
+- The lights for entry and exit should linger for longer rather than flash so that it's not overstimulating.
+- Adding some sort of transition between colors to indicate how many people are in the club(for instance, if there are 8 people in the club, the light can turn orange as it transitions from green to yellow. 
 
 ## Part C. Prototype the device
 
@@ -169,6 +171,20 @@ Only now should you start worrying about what the device should look like. Devel
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 \*\***Include sketches of what your devices might look like here.**\*\*
+- **Prototype 1:**
+- <img width="1551" height="1201" alt="image" src="https://github.com/user-attachments/assets/4a867c2b-5c66-40a7-896e-cd05265a5aaf" />
+- <img width="4096" height="3072" alt="image" src="https://github.com/user-attachments/assets/f1b2f94d-157b-42b5-8a55-d36faf114a8b" />
+
+
+- **Prototype 2:**
+- <img width="2360" height="1640" alt="image" src="https://github.com/user-attachments/assets/a099500f-25bc-4999-b7f7-0aa02a5f1e4e" />
+- <img width="469" height="471" alt="image" src="https://github.com/user-attachments/assets/f7ee09f5-4a71-4e7e-b467-6b59fc365c47" />
+
+
+- **Prototype 3:**
+- <img width="767" height="511" alt="image" src="https://github.com/user-attachments/assets/e2cf1b4f-a3bd-43dc-a0ef-8cf47362da24" />
+- <img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/e7ec1bd3-6ce3-4978-af86-6f2ea0a598b3" />
+
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
