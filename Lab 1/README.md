@@ -1,7 +1,6 @@
 
 
 # Staging Interaction
-**Sean Lewis(shl225), Evan Fang(hf363), Benthan Vu(bv233), Xuesi Chen(xc562)**
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
 There is no actor that plays Tinkerbell--her existence in the play comes from the interactions that the other characters have with her.
@@ -125,6 +124,13 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 - Goal 7: 20th person entering the club
 <img width="828" height="416" alt="image" src="https://github.com/user-attachments/assets/31c7a839-dab8-406e-b136-c4f0f907a3c7" />
 
+**Storyboard 8**
+- Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+- Players: People who enter and exit the club 
+- Activity 8: When there is movement inside the club, the saturation of the light varies
+- Goal 8: People dancing inside the club 
+<img width="2360" height="1640" alt="image" src="https://github.com/user-attachments/assets/cff7bc0b-5754-410c-b616-893e681b03a0" />
+
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
@@ -196,9 +202,9 @@ Think about the setting of the device: is the environment a place where the devi
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
-[Link](https://drive.google.com/file/d/1E2wXCfi-o8_GVCzEeaN4jgAJjs_uXW0B/view?usp=sharing )
+- [Link](https://drive.google.com/file/d/1E2wXCfi-o8_GVCzEeaN4jgAJjs_uXW0B/view?usp=sharing )
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
-**Sean Lewis(shl225), Evan Fang(hf363), Benthan Vu(bv233), Xuesi Chen(xc562)**
+- **Sean Lewis(shl225), Evan Fang(hf363), Benthan Vu(bv233), Xuesi Chen(xc562)**
 
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
