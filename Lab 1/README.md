@@ -109,24 +109,52 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 \*\***Include pictures of your storyboards here**\*\*
 
 **Storyboard 1**
+Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+Players: People who enter and exit the club 
+Activity 1: When someone enters the club, the light flashes white for 0.1 seconds, then reverts back to its original color(either red, green, yellow, or black)
+Goal 1: Entering the club 
 <img width="1064" height="408" alt="image" src="https://github.com/user-attachments/assets/e9308765-be61-47ce-b906-c586194b9589" />
 
 **Storyboard 2**
+Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+Players: People who enter and exit the club 
+Activity 2: When someone exits the club, the light flashes black for for 0.1 seconds, then reverts back to its original color(either red, green, yellow, or black)
+Goal 2: Exiting the club 
 <img width="1082" height="371" alt="image" src="https://github.com/user-attachments/assets/53f6427d-6d2f-4214-b9fc-16bbbe68e93e" />
 
 **Storyboard 3**
+Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+Players: People who enter and exit the club 
+Activity 3: When there is no none in the club, the light is black
+Goal 3: Everyone leaving the club 
 <img width="602" height="580" alt="image" src="https://github.com/user-attachments/assets/1f0d4147-3a52-4e60-8b4e-414aa68225cf" />
 
 **Storyboard 4**
+Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+Players: People who enter and exit the club 
+Activity 4: When there are between 5 and 9 people in the club(inclusive), the light turns green
+Goal 4: 5th person entering the club
 <img width="1070" height="387" alt="image" src="https://github.com/user-attachments/assets/1665642b-df21-4766-84ed-10382f4f0b1c" />
 
 **Storyboard 5**
+Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+Players: People who enter and exit the club 
+Activity 5: When there are between 10 and 14 people in the club(inclusive), the light turns yellow
+Goal 5: 10th person entering the club 
 <img width="1051" height="388" alt="image" src="https://github.com/user-attachments/assets/0321a370-98f8-4e1c-9bcd-1837122223f2" />
 
 **Storyboard 6**
+Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+Players: People who enter and exit the club 
+Activity 6: When there are between 15 and 19 people in the club(inclusive), the light turns red
+Goal 6: 15th person entering the club 
 <img width="806" height="413" alt="image" src="https://github.com/user-attachments/assets/defa8386-fdeb-487d-b130-60e2712301bc" />
 
 **Storyboard 7**
+Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+Players: People who enter and exit the club 
+Activity 7: When there are 20 people or more in the club, there is a strobe light rotation(red 1 second, green 1 second, blue 1 second)
+Goal 7: 20th person entering the club
 <img width="828" height="416" alt="image" src="https://github.com/user-attachments/assets/31c7a839-dab8-406e-b136-c4f0f907a3c7" />
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
