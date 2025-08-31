@@ -206,7 +206,7 @@ Think about the setting of the device: is the environment a place where the devi
 - [Link](https://drive.google.com/file/d/1E2wXCfi-o8_GVCzEeaN4jgAJjs_uXW0B/view?usp=sharing )
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
-- **Akash Batu: Storyboards #1, #2, #3, #4, #5, Wizarding Tinkerbelle**
+- **Akash Basu: Storyboards #1, #2, #3, #4, #5**
 
 - **Benthan Vu: Costume #1, Paper Prototype #1, Research & Feedback**
 
