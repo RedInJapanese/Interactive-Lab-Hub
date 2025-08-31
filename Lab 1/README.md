@@ -187,13 +187,19 @@ Think about the setting of the device: is the environment a place where the devi
 
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+**Concerns:**
+- The interactions mentioned require us to use strong lighting. The brightness either needs to increase significantly or we need to use an external light source.
 
+**Opportunities**
+- reliance on light gives us opportunities for a lot of creative effects such as gradients and color shifts. The device can be scaled either by using more light sources or more phones as displays. Doing so would make it more versatile for things other than clubs(parks, bedrooms, airplanes, etc.)
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
-
+[Link](https://drive.google.com/file/d/1E2wXCfi-o8_GVCzEeaN4jgAJjs_uXW0B/view?usp=sharing )
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
+**Sean Lewis(shl225), Evan Fang(hf363), Benthan Vu(bv233), Xuesi Chen(xc562)**
+
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
 
