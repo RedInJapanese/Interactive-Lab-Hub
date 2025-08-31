@@ -206,8 +206,18 @@ Think about the setting of the device: is the environment a place where the devi
 - [Link](https://drive.google.com/file/d/1E2wXCfi-o8_GVCzEeaN4jgAJjs_uXW0B/view?usp=sharing )
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
-- **Sean Lewis(shl225), Evan Fang(hf363), Benthan Vu(bv233), Xuesi Chen(xc562)**
+- **Akash Batu: Storyboards #1, #2, #3, #4, #5, Wizarding Tinkerbelle**
 
+- **Benthan Vu: Costume #1, Paper Prototype #1, Research & Feedback**
+
+- **Carrie Wang: Wizarding the Device, Research & Feedback**
+
+- **Evan Fang: Costume #2, Paper Prototype #2, Storyboard #8**
+
+- **Sean Lewis: Storyboards #6, #7, Setting up Tinkerbelle**
+
+- **Xuesi Chen: Costume #3, Paper Prototype #3, Demo Video Recording and Editing**
+  
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
 
