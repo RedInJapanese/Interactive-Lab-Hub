@@ -77,10 +77,10 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 \*\***Include pictures of your storyboards here**\*\*
 
 **Storyboard 1**
-Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
-Players: People who enter and exit the club 
-Activity 1: When someone enters the club, the light flashes white for 0.1 seconds, then reverts back to its original color(either red, green, yellow, or black)
-Goal 1: Entering the club 
+- Setting: Lively club environment with a device integrated in their lighting system. Said system is designed to change based on the number of people in the club, someone entering/exiting the club, and the amount of movement that occurs inside the club. 
+- Players: People who enter and exit the club 
+- Activity 1: When someone enters the club, the light flashes white for 0.1 seconds, then reverts back to its original color(either red, green, yellow, or black)
+- Goal 1: Entering the club 
 <img width="1064" height="408" alt="image" src="https://github.com/user-attachments/assets/e9308765-be61-47ce-b906-c586194b9589" />
 
 **Storyboard 2**
