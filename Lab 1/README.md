@@ -1,9 +1,7 @@
 
 
 # Staging Interaction
-
-\*\***NAME OF COLLABORATOR HERE**\*\*
-
+**Sean Lewis(shl225), Evan Fang(hf363), Benthan Vu(bv233), Xuesi Chen(xc562)**
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
 There is no actor that plays Tinkerbell--her existence in the play comes from the interactions that the other characters have with her.
@@ -74,9 +72,62 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
+**Setting:** The interaction takes place in a lively club environment. The “device” is imagined as part of the club’s lighting system, which is designed to change based on the number of people in the club, someone entering and exiting the club, and the amount of movement that occurs inside the club. 
+
+**Players:** The people involved in the interaction are people who enter and exit the club 
+
+**Activity 1:** When someone enters the club, the light flashes white for 0.1 seconds, then reverts back to its original color(either red, green, yellow, or black)
+
+**Activity 2:** When someone exits the club, the light flashes black for for 0.1 seconds, then reverts back to its original color(either red, green, yellow, or black)
+
+**Activity 3:** When there is no none in the club, the light is black
+
+**Activity 4:** When there are between 5 and 9 people in the club(inclusive), the light turns green
+
+**Activity 5:** When there are between 10 and 14 people in the club(inclusive), the light turns yellow
+
+**Activity 6:** When there are between 15 and 19 people in the club(inclusive), the light turns red
+
+**Activity 7:** When there are 20 people or more in the club, there is a strobe light rotation(red 1 second, green 1 second, blue 1 second)
+
+**Goal 1:** Entering the club 
+
+**Goal 2:** Exiting the club 
+
+**Goal 3:** Everyone leaving the club 
+
+**Goal 4:** 5th person entering the club
+
+**Goal 5:** 10th person entering the club 
+
+**Goal 6:** 15th person entering the club 
+
+**Goal 7:** 20th person entering the club
+
 Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
 
 \*\***Include pictures of your storyboards here**\*\*
+
+**Storyboard 1**
+<img width="1064" height="408" alt="image" src="https://github.com/user-attachments/assets/e9308765-be61-47ce-b906-c586194b9589" />
+
+**Storyboard 2**
+<img width="1082" height="371" alt="image" src="https://github.com/user-attachments/assets/53f6427d-6d2f-4214-b9fc-16bbbe68e93e" />
+
+**Storyboard 3**
+<img width="602" height="580" alt="image" src="https://github.com/user-attachments/assets/1f0d4147-3a52-4e60-8b4e-414aa68225cf" />
+
+**Storyboard 4**
+<img width="1070" height="387" alt="image" src="https://github.com/user-attachments/assets/1665642b-df21-4766-84ed-10382f4f0b1c" />
+
+**Storyboard 5**
+<img width="1051" height="388" alt="image" src="https://github.com/user-attachments/assets/0321a370-98f8-4e1c-9bcd-1837122223f2" />
+
+**Storyboard 6**
+<img width="806" height="413" alt="image" src="https://github.com/user-attachments/assets/defa8386-fdeb-487d-b130-60e2712301bc" />
+
+**Storyboard 7**
+<img width="828" height="416" alt="image" src="https://github.com/user-attachments/assets/31c7a839-dab8-406e-b136-c4f0f907a3c7" />
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
