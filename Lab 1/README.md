@@ -251,3 +251,47 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+**Storyboard 1**
+- Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
+- Players: People who enter and exit the park. 
+- Activity 1: When an unattended child leaves the park, the device flashes red.
+<img width="1198" height="648" alt="image" src="https://github.com/user-attachments/assets/459fae53-5a38-4e4f-917f-6cbec6c8d862" />
+
+**Storyboard 2**
+- Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
+- Players: People who enter and exit the park. 
+- Activity 2: When violence breaks out at the park, the light flashes red. 
+<img width="1154" height="626" alt="image" src="https://github.com/user-attachments/assets/9a137bb3-84cd-487a-a3b1-f3876afca12f" />
+
+
+**Storyboard 3**
+- Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
+- Players: People who enter and exit the park. 
+- Activity 3: When someone enters the park, the light flashes white for 0.1 seconds.
+<img width="1726" height="628" alt="image" src="https://github.com/user-attachments/assets/db43b8df-13c9-4bdc-96d5-55909ed92de9" />
+
+**Storyboard 4**
+- Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
+- Players: People who enter and exit the park. 
+- Activity 4: When there's less than 5 people, the light defaults to black. 
+<img width="1692" height="650" alt="image" src="https://github.com/user-attachments/assets/bf7f286c-7781-4d49-ba25-65678edcfac5" />
+
+**Storyboard 5**
+- Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
+- Players: People who enter and exit the park. 
+- Activity 5: When there's between 5-9 people the light is green. When there's between 10 and 15 people, the light flashes yellow. 
+<img width="1730" height="662" alt="image" src="https://github.com/user-attachments/assets/04fb48c6-1b92-4711-b52e-804d248ea4b0" />
+
+**Storyboard 6**
+- Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
+- Players: People who enter and exit the park. 
+- Activity 6: When there's between 10-14 people the light is yellow. When there's between 15 and 19 people, the light flashes red. 
+<img width="2128" height="838" alt="image" src="https://github.com/user-attachments/assets/e8ff1d95-d3aa-4e1d-b574-96ac6a115684" />
+
+**Storyboard 7**
+- Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
+- Players: People who enter and exit the park. 
+- Activity 7: When there's between 15-19 people the light is red. When there's more than 20 people, a strobe light going between red, blue, and green starts. 
+<img width="2128" height="838" alt="image" src="https://github.com/user-attachments/assets/e8ff1d95-d3aa-4e1d-b574-96ac6a115684" />
+
