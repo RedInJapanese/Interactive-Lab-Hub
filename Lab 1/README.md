@@ -295,3 +295,65 @@ Do last week’s assignment again, but this time:
 - Activity 7: When there's between 15-19 people the light is red. When there's more than 20 people, a strobe light going between red, blue, and green starts. 
 <img width="1604" height="674" alt="image" src="https://github.com/user-attachments/assets/07485226-e96b-4d3a-834b-9def1c2976ca" />
 
+## Part B. Act out the Interaction
+
+Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
+
+\*\***Are there things that seemed better on paper than acted out?**\*\*
+- Changes between the lights(especially with the strobe lights when there's 20 people or more) was overstimulating and disorienting. We made the window a little bit longer in the video prototype(shown below)
+\*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
+- Instead of flashing lights for entry and exits, we should instead use some sort of sound to indicate that someone's entered the park
+
+
+## Part E. Costume the device
+
+Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
+
+Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
+
+\*\***Include sketches of what your devices might look like here.**\*\*
+- **Prototype 1:**
+- <img width="923" height="994" alt="image" src="https://github.com/user-attachments/assets/b28eb1b1-ee74-4f68-a3d4-78752d7bffe7" />
+- <img width="4000" height="2250" alt="image" src="https://github.com/user-attachments/assets/449664b1-9468-4182-afad-7670b4a7e7f6" />
+
+
+- **Prototype 2:**
+- <img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/a5c360c1-1e5d-47a3-b2ba-fe9e616ee7a8" />
+- <img width="1690" height="1146" alt="image" src="https://github.com/user-attachments/assets/57c933a2-6de6-47a0-b0e4-e9cf8ae5d1a4" />
+
+
+- **Prototype 3:**
+- 
+
+\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
+**Concerns:**
+- Relying only on brightness/lights might pigeonhole us unecessarily. Might be a good idea to explore using sound for interactions as well.
+- 
+**Opportunities**
+- Using either a bigger light source or more light sources could be interesting. 
+
+## Part F. Record
+
+\*\***Take a video of your prototyped interaction.**\*\*
+
+**Click on the below image to play the video on YouTube**
+- **Interaction 1**
+[![Interaction 1](https://drive.google.com/file/d/1IRuMRNZkCykHRBpIILB0YcUu1AbRaSbJ/view?usp=sharing)
+- **Interaction 2**
+[![Interaction 2](https://drive.google.com/file/d/1KgrgI3zoKyxonYKrkQFtm3CO67gs3I3m/view?usp=sharing)
+- **Interaction 3**
+[![Interaction 3](https://drive.google.com/file/d/1r4YpizmpGZkrrKG1pb9tWHtPjCbxF2yT/view?usp=sharing)
+
+\*\***Please indicate who you collaborated with on this Lab.**\*\*
+- **Akash Basu: Storyboards #1, #2, #3, #4, #5, #6, and #7**
+
+- **Benthan Vu: Costume #1, Research & Feedback**
+
+- **Carrie Wang: Research & Feedback**
+
+- **Evan Fang: Costume #2, Paper Prototype #2**
+
+- **Sean Lewis: Editing, Setting up Tinkerbelle**
+
+- **Xuesi Chen: Costume #1, Paper Prototype #1, Editing**
