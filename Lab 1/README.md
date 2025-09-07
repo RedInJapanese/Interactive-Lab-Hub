@@ -293,5 +293,5 @@ Do last week’s assignment again, but this time:
 - Setting: Local park in New York City with a device at the entrance that tracks things like the number of people there, unattended children, violence, etc.). 
 - Players: People who enter and exit the park. 
 - Activity 7: When there's between 15-19 people the light is red. When there's more than 20 people, a strobe light going between red, blue, and green starts. 
-<img width="2128" height="838" alt="image" src="https://github.com/user-attachments/assets/e8ff1d95-d3aa-4e1d-b574-96ac6a115684" />
+<img width="1604" height="674" alt="image" src="https://github.com/user-attachments/assets/07485226-e96b-4d3a-834b-9def1c2976ca" />
 
