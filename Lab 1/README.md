@@ -323,7 +323,9 @@ Think about the setting of the device: is the environment a place where the devi
 
 
 - **Prototype 3:**
-- 
+- <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c049fc0d-9127-40fe-8c42-79fe1ecc1e7b" />
+- <img width="1364" height="1387" alt="image" src="https://github.com/user-attachments/assets/33e58ac9-b2ff-4b74-a132-da4679092c99" />
+
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
