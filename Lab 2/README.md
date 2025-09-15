@@ -218,7 +218,11 @@ After that, Git will ask you to login to your GitHub account to push the updates
 \*\*\***Take a video of your PiClock.**\*\*\*
 **Video:** https://drive.google.com/file/d/1JmGJE9CwK_hBbDBfrtwPiqQiY0Jt78Q2/view?usp=sharing
 <img width="293" height="538" alt="image" src="https://github.com/user-attachments/assets/d9e0e719-c781-4223-8079-6611986e5dc3" />
+<img width="32" height="32" alt="shark" src="https://github.com/user-attachments/assets/8e9f48de-5919-484d-9eec-6e19c76a0e6f" />
+<img width="32" height="32" alt="fish" src="https://github.com/user-attachments/assets/83532857-863c-41d0-b54f-e82ffc439e4b" />
+<img width="32" height="32" alt="bubble" src="https://github.com/user-attachments/assets/360ebbd3-3d15-4270-8c6e-dc3db70f8373" />
 
+This works by using pixel art of sharks, goldfish, and bubbles. The sharks indicate the hours(12 hour format), the goldfish represent the minutes(every 2 minutes), and the bubbles represent the seconds(every 12 seconds).
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
@@ -226,7 +230,7 @@ After that, Git will ask you to login to your GitHub account to push the updates
 # Prep for Part 2
 
 1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
-  
+
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
 
