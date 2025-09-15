@@ -1,4 +1,5 @@
 import time
+import datetime
 import subprocess
 import digitalio
 import board
@@ -63,7 +64,8 @@ backlight.value = True
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=400)
-
+    now = str(datetime.datetime.now().time()) 
+    draw.text((0, 0), now, font=font, fill="#FFFFFF")
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
 
     # Display image.
