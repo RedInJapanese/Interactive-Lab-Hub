@@ -225,6 +225,7 @@ After that, Git will ask you to login to your GitHub account to push the updates
 This works by using pixel art of sharks, goldfish, and bubbles. The sharks indicate the hours(12 hour format), the goldfish represent the minutes(every 2 minutes), and the bubbles represent the seconds(every 12 seconds).
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+<img width="2032" height="1443" alt="image" src="https://github.com/user-attachments/assets/72e82f75-a915-4547-bac6-0c8f09682ff3" />
 
 
 # Prep for Part 2
