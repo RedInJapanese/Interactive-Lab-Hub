@@ -340,12 +340,9 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Take a video of your prototyped interaction.**\*\*
 
 **Click on the below image to play the video on YouTube**
-- **Interaction 1**
-[![Interaction 1](https://drive.google.com/file/d/1IRuMRNZkCykHRBpIILB0YcUu1AbRaSbJ/view?usp=sharing)
-- **Interaction 2**
-[![Interaction 2](https://drive.google.com/file/d/1KgrgI3zoKyxonYKrkQFtm3CO67gs3I3m/view?usp=sharing)
-- **Interaction 3**
-[![Interaction 3](https://drive.google.com/file/d/1r4YpizmpGZkrrKG1pb9tWHtPjCbxF2yT/view?usp=sharing)
+- **Interaction 1:** https://drive.google.com/file/d/1IRuMRNZkCykHRBpIILB0YcUu1AbRaSbJ/view?usp=sharing
+- **Interaction 2:** https://drive.google.com/file/d/1KgrgI3zoKyxonYKrkQFtm3CO67gs3I3m/view?usp=sharing
+- **Interaction 3:** https://drive.google.com/file/d/1r4YpizmpGZkrrKG1pb9tWHtPjCbxF2yT/view?usp=sharing 
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 - **Akash Basu: Storyboards #1, #2, #3, #4, #5, #6, and #7**
