@@ -227,22 +227,7 @@ This works by using pixel art of sharks, goldfish, and bubbles. The sharks indic
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 <img width="2032" height="1443" alt="image" src="https://github.com/user-attachments/assets/72e82f75-a915-4547-bac6-0c8f09682ff3" />
 
+<img width="3508" height="2480" alt="image" src="https://github.com/user-attachments/assets/4e6d218a-6488-4362-95d2-ba8c880c8a46" />
 
-# Prep for Part 2
-
-1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
-
-
-2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
-
-# Lab 2 Part 2
-
-[Update your Lab Hub](pull_updates/README.md) to get the latest content and requirements for Part 2.
-
-Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
-
-As always, make sure you document contributions and ideas from others explicitly in your writeup.
-
-You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
 
