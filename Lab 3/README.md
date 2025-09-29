@@ -234,9 +234,36 @@ From a remote browser on the same network, check to make sure your webserver is 
 
 ### Storyboard
 
+
+
+
+
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
 
 \*\***Post your storyboard and diagram here.**\*\*
+
+**Storyboard 1**
+- Setting: A walkway. The handheld device uses a camera to view their surroundings. The user can ask the device where to go or what is in If they are approaching an obstacle or straying from a walkway, an auditory queue is played telling them where they need to go.
+- Players: Blind individuals or persons with visual impairments. 
+- Activity 1: when the user strays from the walkway.
+<img width="1999" height="1520" alt="image" src="https://github.com/user-attachments/assets/ea1c4d87-2a34-437c-b96f-befc2c98fe36" />
+
+
+**Storyboard 2**
+- Setting: A walkway. The handheld device uses a camera to view their surroundings. The user can ask the device where to go or what is in If they are approaching an obstacle or straying from a walkway, an auditory queue is played telling them where they need to go.
+- Players: Blind individuals or persons with visual impairments. 
+- Activity 2: when the user approaches a fire hydrant.
+<img width="2005" height="1383" alt="image" src="https://github.com/user-attachments/assets/a9cd9082-3331-47b3-988c-93ae799d85ff" />
+
+**Storyboard 3**
+- Setting: The user is stopped in the middle of nowhere. The handheld device uses a camera to view their surroundings. The user can ask the device where to go or what is in If they are approaching an obstacle or straying from a walkway, an auditory queue is played telling them where they need to go.
+- Players: Blind individuals or persons with visual impairments. 
+- Activity 3: when the user asks where they are.
+<img width="1730" height="1187" alt="image" src="https://github.com/user-attachments/assets/cce453e7-ea3d-436f-9339-a3fe98ebe579" />
+
+**Verplank Diagram**
+<img width="3508" height="2480" alt="image" src="https://github.com/user-attachments/assets/7ef58650-4c72-48eb-b08b-576da705e4db" />
+
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
@@ -306,6 +333,7 @@ Answer the following:
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
+
 
 
 
