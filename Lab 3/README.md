@@ -273,6 +273,24 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
+User: Where am I? 
+
+Device: 11 East Loop Road, New York City
+
+User: What is in front of me? 
+
+Device: Fire hydrant
+
+User approaches a fire hydrant 
+
+Device: STOP! FIRE HYDRANT DETECTED!
+
+User strays away from walkway
+
+Device: STOP! DEVIATION DETECTED!
+
+
+
 **Video Link: ** https://drive.google.com/file/d/1LquD3rQXZxGpD5Kh7e3VpPtcSlB84ukr/view?usp=sharing
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
@@ -337,6 +355,7 @@ Answer the following:
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
+
 
 
 
