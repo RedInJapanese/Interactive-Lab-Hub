@@ -113,6 +113,7 @@ The system works by using a similar script to the `test_microphone.py` in which 
 
 *Include videos or screencaptures of both the system and the controller.*
 **Interaction #1**
+
 **Video 1: ** https://drive.google.com/file/d/1V6B-6HG_9P-10FRAyD1C0uKfSYjBXcfy/view?usp=sharing
 **Video 2:** https://drive.google.com/file/d/1pKCFmXsvytORtMqWEy6nl3ywQfl_UIu3/view?usp=sharing
 **Video 3:** https://drive.google.com/file/d/1RJB3I3uWRiQ-s9-oj_SS-bl7Ks29DLc_/view?usp=sharing
@@ -152,6 +153,7 @@ Answer the following:
 
 \*\**your answer here*\*\*
 - I could use an extra python script to take data from standard output and save it into a csv for me to analyze later. I can use the system to create a dataset by looking at specific things like how long it takes to detect objects, the distance at which it detects objects, how frequently failures happen when looking up location, etc.
+
 
 
 
