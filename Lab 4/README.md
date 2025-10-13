@@ -31,20 +31,33 @@
 		- <img width="1402" height="788" alt="image" src="https://github.com/user-attachments/assets/c9fb52fa-0704-4a19-821c-04ff61727b86" />
 		- <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/24ef2ae9-6b41-4ed3-87e4-84918b322159" />
 		- <img width="1400" height="624" alt="image" src="https://github.com/user-attachments/assets/6bf62e88-f993-4257-ae8e-c2ffa6a535fd" />
-		- 
+		- <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/8e1dab78-8a93-49d4-a837-8b06c76c63c5" />
+		- <img width="1478" height="792" alt="image" src="https://github.com/user-attachments/assets/4f378463-0975-4f91-a319-142b577794cd" />
+		- <img width="1508" height="664" alt="image" src="https://github.com/user-attachments/assets/8669f777-30e3-4f19-bc13-a0fdfb25e558" />
+
 	- Code and terminal output for each sensor
 
 *️⃣ **C. Physical Sensing Design**
 	- 5 sketches of different ways to use your chosen sensor
+		- <img width="3508" height="2480" alt="image" src="https://github.com/user-attachments/assets/05cc89d5-c1d5-445c-be48-a133279e613e" />
 	- Written reflection: questions raised, what to prototype
+		- Does stacking the sensors on top of the pi affect its performance? 
+		- Is there a more niche use for the joystick sensor that I'm not seeing?
 	- Pick one design to prototype and explain why
+		- The joystick sensor
 
 *️⃣ **D. Display & Housing**
 	- 5 sketches for display/button/knob positioning
+		- <img width="3508" height="2480" alt="image" src="https://github.com/user-attachments/assets/cebbbc00-7d3c-4bbf-b87f-d755aca4c64d" />
 	- Written reflection: questions raised, what to prototype
+		- Can I use a material other than cardboard for housing?
+		- Do I need some sort of cooling inside the housing?
 	- Pick one display design to integrate
+		- Design #3
 	- Rationale for design
+		- Placed them next to each other for ease of access
 	- Photos/videos of your cardboard prototype
+		= 
 
 ---
 
