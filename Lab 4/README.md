@@ -25,6 +25,8 @@
 	- Code and terminal output showing touch detection
 		- <img width="1386" height="620" alt="image" src="https://github.com/user-attachments/assets/44d8a8ce-966d-47be-b1a8-a6d915d8ef3b" />
 
+	- 
+
 *️⃣ **B. More Sensors**
 	- Photos/videos of each sensor tested (light/proximity, rotary encoder, joystick, distance sensor)
 	- Code and terminal output for each sensor
