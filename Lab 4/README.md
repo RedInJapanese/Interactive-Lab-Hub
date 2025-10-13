@@ -25,10 +25,13 @@
 	- Code and terminal output showing touch detection
 		- <img width="1386" height="620" alt="image" src="https://github.com/user-attachments/assets/44d8a8ce-966d-47be-b1a8-a6d915d8ef3b" />
 
-	- 
-
 *️⃣ **B. More Sensors**
 	- Photos/videos of each sensor tested (light/proximity, rotary encoder, joystick, distance sensor)
+		- <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/0b4fb2ae-8f9f-4474-9b4f-668014e6a963" />
+		- <img width="1402" height="788" alt="image" src="https://github.com/user-attachments/assets/c9fb52fa-0704-4a19-821c-04ff61727b86" />
+		- <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/24ef2ae9-6b41-4ed3-87e4-84918b322159" />
+		- <img width="1400" height="624" alt="image" src="https://github.com/user-attachments/assets/6bf62e88-f993-4257-ae8e-c2ffa6a535fd" />
+		- 
 	- Code and terminal output for each sensor
 
 *️⃣ **C. Physical Sensing Design**
