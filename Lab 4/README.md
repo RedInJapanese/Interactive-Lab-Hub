@@ -57,7 +57,8 @@
 	- Rationale for design
 		- Placed them next to each other for ease of access
 	- Photos/videos of your cardboard prototype
-		= 
+		- <img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/09e5844a-c8c2-4c10-9ffd-82aede88e3d4" />
+
 
 ---
 
