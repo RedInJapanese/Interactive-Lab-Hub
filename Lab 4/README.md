@@ -21,7 +21,9 @@
 **Submit the following for Part 1:**  
 *️⃣ **A. Capacitive Sensing**
 	- Photos/videos of your Twizzler (or other object) capacitive sensor setup
+		- <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/f091165b-b8c0-4549-b90a-d4abf99d1b37" />
 	- Code and terminal output showing touch detection
+		- <img width="1386" height="620" alt="image" src="https://github.com/user-attachments/assets/44d8a8ce-966d-47be-b1a8-a6d915d8ef3b" />
 
 *️⃣ **B. More Sensors**
 	- Photos/videos of each sensor tested (light/proximity, rotary encoder, joystick, distance sensor)
