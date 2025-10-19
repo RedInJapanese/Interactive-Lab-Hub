@@ -39,8 +39,8 @@
 
 *️⃣ **C. Physical Sensing Design**
 	- 5 sketches of different ways to use your chosen sensor
-		-	<img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/749df719-1d8a-4c57-9571-410b2c81e342" />
-		-	<img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/78cce206-2807-4e65-8a41-7a416db9529b" />
+		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/749df719-1d8a-4c57-9571-410b2c81e342" />
+		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/78cce206-2807-4e65-8a41-7a416db9529b" />
 	- Written reflection: questions raised, what to prototype
 		- Does stacking the sensors on top of the pi affect its performance? 
 		- Is there a more niche use for the joystick sensor that I'm not seeing?
@@ -49,7 +49,8 @@
 
 *️⃣ **D. Display & Housing**
 	- 5 sketches for display/button/knob positioning
-		- <img width="3508" height="2480" alt="image" src="https://github.com/user-attachments/assets/cebbbc00-7d3c-4bbf-b87f-d755aca4c64d" />
+		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/b9d763d4-0389-44cb-affa-1f75649d8794" />
+		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/0301bf74-662c-4687-a8c9-07c4c2a440ea" />
 	- Written reflection: questions raised, what to prototype
 		- Can I use a material other than cardboard for housing?
 		- Do I need some sort of cooling inside the housing?
