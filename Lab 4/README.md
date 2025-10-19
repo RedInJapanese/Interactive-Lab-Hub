@@ -39,7 +39,8 @@
 
 *️⃣ **C. Physical Sensing Design**
 	- 5 sketches of different ways to use your chosen sensor
-		- <img width="3508" height="2480" alt="image" src="https://github.com/user-attachments/assets/05cc89d5-c1d5-445c-be48-a133279e613e" />
+		-	<img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/749df719-1d8a-4c57-9571-410b2c81e342" />
+		-	<img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/78cce206-2807-4e65-8a41-7a416db9529b" />
 	- Written reflection: questions raised, what to prototype
 		- Does stacking the sensors on top of the pi affect its performance? 
 		- Is there a more niche use for the joystick sensor that I'm not seeing?
