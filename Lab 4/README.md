@@ -33,6 +33,7 @@
 		- <img width="1400" height="624" alt="image" src="https://github.com/user-attachments/assets/6bf62e88-f993-4257-ae8e-c2ffa6a535fd" />
 		- <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/8e1dab78-8a93-49d4-a837-8b06c76c63c5" />
 		- <img width="1478" height="792" alt="image" src="https://github.com/user-attachments/assets/4f378463-0975-4f91-a319-142b577794cd" />
+		- <img width="858" height="880" alt="image" src="https://github.com/user-attachments/assets/d1c9b9a3-114e-470e-adf8-e5996a43bf6a" />
 		- <img width="1508" height="664" alt="image" src="https://github.com/user-attachments/assets/8669f777-30e3-4f19-bc13-a0fdfb25e558" />
 *️⃣ **C. Physical Sensing Design**
 	- 5 sketches of different ways to use your chosen sensor
