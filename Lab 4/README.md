@@ -41,17 +41,21 @@
 		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/78cce206-2807-4e65-8a41-7a416db9529b" />
 	- Written reflection: questions raised, what to prototype
 	
-	- Reflection: The sensors themselves seriously limit you on what kind of ideas you can use. While part 2 allows you to use one sensor, part 1 asks for you to come up with ideas from one sensor. 	  In a sense it introduces a constraint and forces you to be creative, but it is also a little bit limiting. 
+	- Reflection: The sensors themselves seriously limit you on what kind of ideas you can use. 
+	  While part 2 allows you to use one sensor, part 1 asks for you to come up with ideas from one sensor. 	  
+	  In a sense it introduces a constraint and forces you to be creative, but it is also a little bit limiting. 
 	
 	- Questions:
 		- Does the webcam count as it's own sensor? 
-		- Woulnd't the buttons on the minifruit technically count as a twizzler? If yes, then can I use that as my sensor instead?
+		- Woulnd't the buttons on the minifruit technically count as a twizzler? 
+		  If yes, then can I use that as my sensor instead?
 	
 	- What to prototype:
 		- Idea #2
 	
 	- Rationale for design		
-		- It uses two sensors as part 2 requests and it uses machine learning techniques that I am very interested in. 
+		- It uses two sensors as part 2 requests and it uses machine learning techniques 
+		  that I am very interested in. 
 
 *️⃣ **D. Display & Housing**
 	- 5 sketches for display/button/knob positioning
