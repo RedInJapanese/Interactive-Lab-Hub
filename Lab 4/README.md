@@ -79,7 +79,6 @@
 		- The most intuitive design out of all of them. I also find it to be the most ergonomic. 
 	
 	- Photos/videos of your cardboard prototype:		
-<img width="1168" height="972" alt="image" src="https://github.com/user-attachments/assets/2971c3bf-de78-442f-a292-723fec9400ce" />
 <img width="1464" height="1042" alt="image" src="https://github.com/user-attachments/assets/ab0dd1fe-8747-4fe5-bb22-5f3b97f39184" />
 <img width="1460" height="1006" alt="image" src="https://github.com/user-attachments/assets/8d57691c-ddfb-44d8-9f49-96e1fdc66033" />
 
@@ -106,7 +105,7 @@ Video: [link](https://drive.google.com/file/d/11zAG8wEilezNKS5cS4qRo5x8ATkNMcsk/
 
 *️⃣ **F. Final Documentation**
 	- Photos/videos of your final prototype
-		- <img width="956" height="814" alt="image" src="https://github.com/user-attachments/assets/d6ff7279-6344-45e1-8cd2-77fafae4de50" />
+		- <img width="1168" height="972" alt="image" src="https://github.com/user-attachments/assets/2971c3bf-de78-442f-a292-723fec9400ce" />
 	- Written summary: what it looks like, works like, acts like
 
 	The design is the same as #2 in the housing sketches, as I felt that was the most 
