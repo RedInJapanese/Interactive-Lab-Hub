@@ -107,8 +107,6 @@ Video: [link](https://drive.google.com/file/d/11zAG8wEilezNKS5cS4qRo5x8ATkNMcsk/
 *️⃣ **F. Final Documentation**
 	- Photos/videos of your final prototype
 		- <img width="956" height="814" alt="image" src="https://github.com/user-attachments/assets/d6ff7279-6344-45e1-8cd2-77fafae4de50" />
-		- <img width="1380" height="674" alt="image" src="https://github.com/user-attachments/assets/7765be3b-ebdf-4ed9-a0a1-4f04de05c4b4" />
-		- <img width="750" height="678" alt="image" src="https://github.com/user-attachments/assets/3dbc2213-2ee8-4b83-bdd9-8ffc63d74c24" />
 	- Written summary: what it looks like, works like, acts like
 
 	The design is the same as #2 in the housing sketches, as I felt that was the most 
