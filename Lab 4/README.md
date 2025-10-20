@@ -34,9 +34,6 @@
 		- <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/8e1dab78-8a93-49d4-a837-8b06c76c63c5" />
 		- <img width="1478" height="792" alt="image" src="https://github.com/user-attachments/assets/4f378463-0975-4f91-a319-142b577794cd" />
 		- <img width="1508" height="664" alt="image" src="https://github.com/user-attachments/assets/8669f777-30e3-4f19-bc13-a0fdfb25e558" />
-
-	- Code and terminal output for each sensor
-
 *️⃣ **C. Physical Sensing Design**
 	- 5 sketches of different ways to use your chosen sensor
 		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/749df719-1d8a-4c57-9571-410b2c81e342" />
