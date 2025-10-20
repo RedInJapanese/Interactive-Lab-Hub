@@ -106,8 +106,29 @@ Video: [link](https://drive.google.com/file/d/11zAG8wEilezNKS5cS4qRo5x8ATkNMcsk/
 
 *️⃣ **F. Final Documentation**
 	- Photos/videos of your final prototype
+		- <img width="956" height="814" alt="image" src="https://github.com/user-attachments/assets/d6ff7279-6344-45e1-8cd2-77fafae4de50" />
+		- <img width="1380" height="674" alt="image" src="https://github.com/user-attachments/assets/7765be3b-ebdf-4ed9-a0a1-4f04de05c4b4" />
+		- <img width="750" height="678" alt="image" src="https://github.com/user-attachments/assets/3dbc2213-2ee8-4b83-bdd9-8ffc63d74c24" />
 	- Written summary: what it looks like, works like, acts like
-	- Reflection on what you learned and next steps
+
+	The design is the same as #2 in the housing sketches, as I felt that was the most 
+	practical. I have the camera facing the front while the user presses the '0' tile 
+	on the twizzler. Unlike the first implementation, this one does not open the browser
+	and show you that the item has been added to your cart and instead does it via shell. 
+	As mentioned prior, I use the chromium browser to do this, as I can't use headless 
+	selenium with Chrome or Firefox. When an item is detected and the '0' tile on the 
+	twizzler is pressed, then it gets added to the cart. The device acts similar to a 
+	camera, but unlike cameras, you can directly capture object names from the video. 
+	
+	Reflection on what you learned and next steps: 
+	I learned that it's singnificantly more difficult to write GET requests for the Pi
+	due to me not using the GUI. I could have used it, but I felt that it took away from 
+	the idea of designing a portable device. Overall, I think the product acted the way
+	I intended for it to, but there were a few things that were unplanned such as the 
+	specificity of the YOLO classifier and the introduction of a power bank as a power
+	supply to truly make it portable. Going forward, I would wnat to train my own 
+	classifier so that I can identify specific products rather than just objects. 
+	
 
 ---
 
