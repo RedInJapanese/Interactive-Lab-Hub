@@ -101,6 +101,8 @@
 	It also doesn't explicitly name products, so I most likely would need to implement a 
 	classifier of my own. The following video shows a test of this. 
 	Unfortunately, I could not get a video of me pressing the actual button. 
+
+- Video: [link](https://drive.google.com/file/d/11zAG8wEilezNKS5cS4qRo5x8ATkNMcsk/view?usp=sharing)
 *️⃣ **F. Final Documentation**
 	- Photos/videos of your final prototype
 	- Written summary: what it looks like, works like, acts like
