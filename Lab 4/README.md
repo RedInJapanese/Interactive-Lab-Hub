@@ -125,7 +125,9 @@ Video: [link](https://drive.google.com/file/d/11zAG8wEilezNKS5cS4qRo5x8ATkNMcsk/
 	specificity of the YOLO classifier and the introduction of a power bank as a power
 	supply to truly make it portable. Going forward, I would wnat to train my own 
 	classifier so that I can identify specific products rather than just objects. 
-	
+
+	Video:
+Video: [link](https://drive.google.com/file/d/1VRsw5xwj_xO2k2RuoTl6e2m0YbPPANz0/view?usp=sharing)
 
 ---
 
