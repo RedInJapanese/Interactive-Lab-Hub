@@ -50,17 +50,17 @@
 		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/b9d763d4-0389-44cb-affa-1f75649d8794" />
 		- <img width="1200" height="1553" alt="image" src="https://github.com/user-attachments/assets/0301bf74-662c-4687-a8c9-07c4c2a440ea" />
 	- Written reflection: questions raised, what to prototype
-	**Reflection:** One thing that I noticed is that after the 2nd design for the housing, it became incrementally harder to come up with new designs. While I was still able to, I felt like I had to take more time by the time I was at the 5th iteration. I also feel that the quality of the design started to taper off after the third design. I think that's largely a result of my creativity running thin as I went from design to design.
-	**Questions:**
-			- Can I use a material other than cardboard for housing?
-			- Do I need some sort of cooling inside the housing?
-			- Do i need to use a power source that allows you to move the housing wherever you want?(like a powerbank)
-	**What to prototype:**
-		- Design #2
-	Rationale for design
-		- The most intuitive design out of all of them. I also find it to be the most ergonomic. 
-	Photos/videos of your cardboard prototype
-		- <img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/09e5844a-c8c2-4c10-9ffd-82aede88e3d4" />
+**Reflection:** One thing that I noticed is that after the 2nd design for the housing, it became incrementally harder to come up with new designs. While I was still able to, I felt like I had to take more time by the time I was at the 5th iteration. I also feel that the quality of the design started to taper off after the third design. I think that's largely a result of my creativity running thin as I went from design to design.
+**Questions:**
+	- Can I use a material other than cardboard for housing?
+	- Do I need some sort of cooling inside the housing?
+	- Do i need to use a power source that allows you to move the housing wherever you want?(like a powerbank)
+**What to prototype:**
+	- Design #2
+**Rationale for design**		
+	- The most intuitive design out of all of them. I also find it to be the most ergonomic. 
+**Photos/videos of your cardboard prototype**		
+	- <img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/09e5844a-c8c2-4c10-9ffd-82aede88e3d4" />
 
 
 ---
