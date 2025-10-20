@@ -67,7 +67,9 @@
 		- The most intuitive design out of all of them. I also find it to be the most ergonomic. 
 	
 	- Photos/videos of your cardboard prototype		
-		- <img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/09e5844a-c8c2-4c10-9ffd-82aede88e3d4" />
+<img width="1168" height="972" alt="image" src="https://github.com/user-attachments/assets/2971c3bf-de78-442f-a292-723fec9400ce" />
+<img width="1464" height="1042" alt="image" src="https://github.com/user-attachments/assets/ab0dd1fe-8747-4fe5-bb22-5f3b97f39184" />
+<img width="1460" height="1006" alt="image" src="https://github.com/user-attachments/assets/8d57691c-ddfb-44d8-9f49-96e1fdc66033" />
 
 ---
 
