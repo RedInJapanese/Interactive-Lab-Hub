@@ -91,15 +91,16 @@
 	- Code and video for your multi-input multi-output demo (e.g., chaining Qwiic buttons, servo, GPIO expander, etc.)
 	- Reflection on interaction effects and chaining
 
-	For some quick contenxt, I had first tried to implement the image classifier and key input 
-	to add the object to the cart on my local machine. I used the rainforest api to do a reverse 
-	lookup of the item that the YOLO classifier scanned and then I got that object's ASIN number 
-	and added it to the link. However, this functionality is less practical with a Raspberry Pi, 
-	as I'm running the script from the shell. Therefore, I switched to using the Chromium browser
-	and had the 'add to cart' process done via standard output. I think that I was generally 
-	successful, but the YOLO classifier is not that accurate. It also doesn't explicitly name products, 
-	so I most likely would need to implement a classifier of my own. The following video shows a test 
-	of this. Unfortunately, I could not get a video of me pressing the actual button. 
+	Reflection: For some quick contenxt, I had first tried to implement the image classifier 
+	and key input to add the object to the cart on my local machine. I used the rainforest api 
+	to do a reverse lookup of the item that the YOLO classifier scanned and then I got that 
+	object's ASIN number and added it to the link. However, this functionality is less practical 
+	with a Raspberry Pi, as I'm running the script from the shell. Therefore, I switched to 
+	using the Chromium browser and had the 'add to cart' process done via standard output. 
+	I think that I was generally successful, but the YOLO classifier is not that accurate. 
+	It also doesn't explicitly name products, so I most likely would need to implement a 
+	classifier of my own. The following video shows a test of this. 
+	Unfortunately, I could not get a video of me pressing the actual button. 
 *️⃣ **F. Final Documentation**
 	- Photos/videos of your final prototype
 	- Written summary: what it looks like, works like, acts like
