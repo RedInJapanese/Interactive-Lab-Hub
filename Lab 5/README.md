@@ -1,177 +1,172 @@
 # Observant Systems
 
-**NAMES OF COLLABORATORS HERE**
-
-
-For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
-Your **observant device** could, for example, count items, find objects, recognize an event or continuously monitor a room.
-
-This lab will help you think through the design of observant systems, particularly corner cases that the algorithms need to be aware of.
-
-## Prep
-
-1.  Install VNC on your laptop if you have not yet done so. This lab will actually require you to run script on your Pi through VNC so that you can see the video stream. Please refer to the [prep for Lab 2](https://github.com/FAR-Lab/Interactive-Lab-Hub/blob/-/Lab%202/prep.md#using-vnc-to-see-your-pi-desktop).
-2.  Install the dependencies as described in the [prep document](prep.md). 
-3.  Read about [OpenCV](https://opencv.org/about/),[Pytorch](https://pytorch.org/), [MediaPipe](https://mediapipe.dev/), and [TeachableMachines](https://teachablemachine.withgoogle.com/).
-4.  Read Belloti, et al.'s [Making Sense of Sensing Systems: Five Questions for Designers and Researchers](https://www.cc.gatech.edu/~keith/pubs/chi2002-sensing.pdf).
-
-### For the lab, you will need:
-1. Pull the new Github Repo
-1. Raspberry Pi
-1. Webcam 
-
-### Deliverables for this lab are:
-1. Show pictures, videos of the "sense-making" algorithms you tried.
-1. Show a video of how you embed one of these algorithms into your observant system.
-1. Test, characterize your interactive device. Show faults in the detection and how the system handled it.
-
-## Overview
-Building upon the paper-airplane metaphor (we're understanding the material of machine learning for design), here are the four sections of the lab activity:
-
-A) [Play](#part-a)
-
-B) [Fold](#part-b)
-
-C) [Flight test](#part-c)
-
-D) [Reflect](#part-d)
+**Collaborators:** Akash Basu, ab3334
 
 ---
 
-### Part A
-### Play with different sense-making algorithms.
+## Overview
 
-#### Pytorch for object recognition
+In this lab, I created an **observant system** — an interactive Raspberry Pi device that can detect and respond to events in its environment.  
+The goal was to explore how different “sense-making” algorithms (vision and ML models) can enable systems that recognize and react to what they see.  
 
-For this first demo, you will be using PyTorch and running a MobileNet v2 classification model in real time (30 fps+) on the CPU. We will be following steps adapted from [this tutorial](https://pytorch.org/tutorials/intermediate/realtime_rpi.html).
+My observant device uses **computer vision and machine learning** to detect motion, gestures, or specific objects, and trigger an action — similar to the "Boat Detector" to detect sign language  
 
-![torch](Readme_files/pyt.gif)
+---
 
+## Part A — Play with Different Sense-Making Algorithms
 
-To get started, install dependencies into a virtual environment for this exercise as described in [prep.md](prep.md).
+### PyTorch Object Recognition (MobileNet v2)
 
-Make sure your webcam is connected.
+I began by experimenting with **PyTorch’s MobileNet v2** model for real-time object recognition.  
+After installing dependencies and connecting my webcam, I ran `infer.py`, which displayed the top object predictions from the live video feed.
 
-You can check the installation by running:
+**Observations:**
+- The model correctly recognized common objects like bottles, cups, and keyboards.  
+- Lighting and background strongly affected accuracy.  
+- The first few inferences were slower, but performance stabilized to around 30 fps after initialization.
 
-```
-python -c "import torch; print(torch.__version__)"
-```
+**What I learned:**
+- Pretrained models can classify many object types, but they’re limited to the 1000 categories included in `classes.json`.
+- Real-time inference on a Pi 4 is possible, but frame rate and latency can be an issue.
 
-If everything is ok, you should be able to start doing object recognition. For this default example, we use [MobileNet_v2](https://arxiv.org/abs/1801.04381). This model is able to perform object recognition for 1000 object classes (check [classes.json](classes.json) to see which ones.
+---
 
-Start detection by running  
+### MediaPipe Hand and Pose Tracking
 
-```
-python infer.py
-```
+I explored **MediaPipe**, focusing on hand and pose detection.  
+I used `hand_pose.py` and tested pinch detection** for continuous control (like a percentage slider) and quiet coyote gesture for discrete commands.
 
-The first 2 inferences will be slower. Now, you can try placing several objects in front of the camera.
+**Observations:**
+- Hand tracking was very robust in good lighting.
+- Pinch detection worked best when the hand was near the center of the frame.
+- Gestures could easily trigger events such as adjusting a servo or controlling brightness.
 
-Read the `infer.py` script, and get familiar with the code. You can change the video resolution and frames per second (fps). You can also easily use the weights of other pre-trained models. You can see examples of other models [here](https://pytorch.org/tutorials/intermediate/realtime_rpi.html#model-choices). 
+**Idea for interaction:**
+I considered using MediaPipe’s pinch percentage to control a servo motor or LED brightness — effectively using your hand as a “virtual knob” in the air.
 
+---
 
-### Machine Vision With Other Tools
-The following sections describe tools ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)).
+###Teachable Machines Custom Classifier
 
-#### MediaPipe
+To test a more customizable approach, I trained a model using **Google’s Teachable Machines**.  
+I built a simple image classifier to recognize:
+1. **Hand up**  
+2. **Hand down**  
+3. **Background / nothing**
 
-A recent open source and efficient method of extracting information from video streams comes out of Google's [MediaPipe](https://mediapipe.dev/), which offers state of the art face, face mesh, hand pose, and body pose detection.
+I collected ~20 samples per class, trained the model, and exported it as a TensorFlow Lite model (`.tflite` + `labels.txt`).  
+After uploading it to the Pi, I ran `tml_example.py` to test live classification.
 
-![Media pipe](Readme_files/mp.gif)
+**Observations:**
+- The model worked well under normal lighting(room lighting, afternoon).
+- distinguished between “hand up” and “hand down” pretty quickly.
+- More sensitive to background changes than MediaPipe.
 
-To get started, install dependencies into a virtual environment for this exercise as described in [prep.md](prep.md):
+**Affordances compared to other methods:**
+- Unlike PyTorch, Teachable Machines allows training on *custom categories*.
+- Easier for rapid prototyping of specific recognition tasks.
+- Slightly slower and less robust than MediaPipe for motion-heavy inputs, but far simpler to deploy.
 
-Each of the installs will take a while, please be patient. After successfully installing mediapipe, connect your webcam to your Pi and use **VNC to access to your Pi**, open the terminal, and go to Lab 5 folder and run the hand pose detection script we provide:
-(***it will not work if you use ssh from your laptop***)
+---
 
+### Summary of Algorithm Comparisons
 
-```
-(venv-ml) pi@ixe00:~ $ cd Interactive-Lab-Hub/Lab\ 5
-(venv-ml) pi@ixe00:~ Interactive-Lab-Hub/Lab 5 $ python hand_pose.py
-```
+| Tool | Input Type | Strengths | Weaknesses |
+|------|-------------|------------|-------------|
+| **PyTorch (MobileNet v2)** | Image classification | Pretrained, powerful, fast | Fixed 1000 classes |
+| **MediaPipe** | Video (pose, face, hands) | Real-time, smooth tracking | Harder to customize categories |
+| **Teachable Machines** | Image/audio | Easy to train custom models | Sensitive to lighting and camera setup |
 
-Try the two main features of this script: 1) pinching for percentage control, and 2) "[Quiet Coyote](https://www.youtube.com/watch?v=qsKlNVpY7zg)" for instant percentage setting. Notice how this example uses hardcoded positions and relates those positions with a desired set of events, in `hand_pose.py`. 
+---
 
-Consider how you might use this position based approach to create an interaction, and write how you might use it on either face, hand or body pose tracking.
+## Part B — Construct a Simple Interaction
 
-(You might also consider how this notion of percentage control with hand tracking might be used in some of the physical UI you may have experimented with in the last lab, for instance in controlling a servo or rotary encoder.)
+For my prototype, I used **MediaPipe hand tracking**.
 
+### Concept: “Air Dimmer” — Hand-Controlled Light Brightness
 
+The system uses **pinch distance** from MediaPipe to control the brightness of an LED connected to the Raspberry Pi.
 
-#### Teachable Machines
-Google's [TeachableMachines](https://teachablemachine.withgoogle.com/train) is very useful for prototyping with the capabilities of machine learning. We are using [a python package](https://github.com/MeqdadDev/teachable-machine-lite) with tensorflow lite to simplify the deployment process.
+- **Input:** Hand pinch percentage detected from the webcam feed.
+- **Processing:** The system maps pinch distance (0–1) to LED brightness (0–255 PWM).
+- **Output:** The LED dims or brightens in real time as you pinch and release.
 
-![Tachable Machines Pi](Readme_files/tml_pi.gif)
+**Experimentation:**
+- Works well under stable lighting.
+- Very intuitive to control — feels like turning a virtual knob in midair.
+- Pinch percentage occasionally jumped when the hand was partially out of frame, causing flicker.
 
-To get started, install dependencies into a virtual environment for this exercise as described in [prep.md](prep.md):
+**Improvements to consider:**
+- Apply smoothing or hysteresis to stabilize LED brightness.
+- Add visual feedback (e.g., on-screen bar) to show brightness level.
 
-After installation, connect your webcam to your Pi and use **VNC to access to your Pi**, open the terminal, and go to Lab 5 folder and run the example script:
-(***it will not work if you use ssh from your laptop***)
+---
 
+## Part C — Test the Interaction Prototype
 
-```
-(venv-tml) pi@ixe00:~ Interactive-Lab-Hub/Lab 5 $ python tml_example.py
-```
+### Observations and Results
 
+| Condition | Result | Notes |
+|------------|---------|-------|
+| Bright indoor light |  Accurate | MediaPipe detected hand easily |
+| Dim lighting | Some misclassifications | Model lost hand landmarks |
+| Moving background | Flicker | Background motion confused detection |
+| Hand partially off-screen | Failure | Detection dropped or jumped |
 
-Next train your own model. Visit [TeachableMachines](https://teachablemachine.withgoogle.com/train), select Image Project and Standard model. The raspberry pi 4 is capable to run not just the low resource models. Second, use the webcam on your computer to train a model. *Note: It might be advisable to use the pi webcam in a similar setting you want to deploy it to improve performance.*  For each class try to have over 150 samples, and consider adding a background or default class where you have nothing in view so the model is trained to know that this is the background. Then create classes based on what you want the model to classify. Lastly, preview and iterate. Finally export your model as a 'Tensorflow lite' model. You will find an '.tflite' file and a 'labels.txt' file. Upload these to your pi (through one of the many ways such as [scp](https://www.raspberrypi.com/documentation/computers/remote-access.html#using-secure-copy), sftp, [vnc](https://help.realvnc.com/hc/en-us/articles/360002249917-VNC-Connect-and-Raspberry-Pi#transferring-files-to-and-from-your-raspberry-pi-0-6), or a connected visual studio code remote explorer).
-![Teachable Machines Browser](Readme_files/tml_browser.gif)
-![Tensorflow Lite Download](Readme_files/tml_download-model.png)
+**When it works:**  
+When the hand is well-lit, centered, and within 50 cm of the camera.
 
-Include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.
+**When it fails:**  
+Low light, partial occlusion, or fast hand movements.
 
-#### (Optional) Legacy audio and computer vision observation approaches
-In an earlier version of this class students experimented with observing through audio cues. Find the material here:
-[Audio_optional/audio.md](Audio_optional/audio.md). 
-Teachable machines provides an audio classifier too. If you want to use audio classification this is our suggested method. 
+**Why it fails:**  
+MediaPipe relies on clear contour visibility. Poor lighting or motion blur causes landmark loss.
 
-In an earlier version of this class students experimented with foundational computer vision techniques such as face and flow detection. Techniques like these can be sufficient, more performant, and allow non discrete classification. Find the material here:
-[CV_optional/cv.md](CV_optional/cv.md).
+---
 
-### Part B
-### Construct a simple interaction.
+### Thinking from the User’s Perspective
 
-* Pick one of the models you have tried, and experiment with prototyping an interaction.
-* This can be as simple as the boat detector shown in lecture.
-* Try out different interaction outputs and inputs.
+- **Are they aware of uncertainties?**  
+  Likely not — users may not understand why brightness flickers.
+  
+- **How bad is a misclassification?**  
+  Not severe (LED flickers), but annoying.
 
+- **How to address it?**  
+  Add smoothing filters or display feedback (like “hand not detected” message).
 
-**\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+- **Possible optimizations:**  
+  - Lower camera resolution for faster FPS.  
+  - Adjust MediaPipe confidence threshold.  
+  - Implement temporal averaging for more stable output.
 
-### Part C
-### Test the interaction prototype
+---
 
-Now flight test your interactive prototype and **note down your observations**:
-For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+## Part D — Characterize the Observant System
 
-**\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
-1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+**Material:** MediaPipe Hand Tracker
 
-### Part D
-### Characterize your own Observant system
+| Question | Answer |
+|-----------|---------|
+| What can you use it for? | Gesture-based controls (lights, motors, menus). |
+| What is a good environment for it? | Well-lit, uncluttered backgrounds, steady camera. |
+| What is a bad environment for it? | Dim or flickering light, complex motion backgrounds. |
+| When will it break? | If the hand moves too fast, or exits the frame. |
+| How will it break? | Landmarks disappear; output jumps or freezes. |
+| Other properties/behaviors? | Smooth tracking when stable; easy to integrate with physical output devices. |
+| How does it feel? | Natural and futuristic — like interacting with an invisible interface. |
 
-Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
-During the lecture, we mentioned questions to help characterize a material:
-* What can you use X for?
-* What is a good environment for X?
-* What is a bad environment for X?
-* When will X break?
-* When it breaks how will X break?
-* What are other properties/behaviors of X?
-* How does X feel?
+**Video Demo:**  
+https://drive.google.com/file/d/11zAG8wEilezNKS5cS4qRo5x8ATkNMcsk/view?usp=sharing 
+---
 
-**\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+## Summary 
 
-### Part 2.
+By experimenting with different sensing libraries, I developed an understanding of how computer vision tools differ in flexibility, robustness, and responsiveness.  
+My prototype — the **Air Dimmer** — demonstrates how real-time hand tracking can control a physical device, but also highlights challenges like lighting and stability.  
 
-Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
+Next, I will refine and integrate the interaction into a final **observant system** and demonstrate it in use.
 
-**\*\*\*Include a short video demonstrating the finished result.\*\*\***
+---
+
+## Part 2 — Final Interactive System (coming next)
