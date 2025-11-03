@@ -13,7 +13,7 @@ My observant device uses **computer vision and neural networks** to detect gestu
 
 ## TECHNICAL DESCRIPTION:
 
-This is an application that utilizes mediapipe's landmark approach to tracking hands in order to train a neural network to recognize the sign language equivalent of letters of the alphabet. This is done by training a neural network using tensor flow that takes in 126 different landmark positions of the hand. Each letter in the sign language alphabets has 400 samples each, giving us a total of over 10,000 samples. The samples are taken using a script called `test.py` which takes the landmarks and saves each one as a `.npy` file. The next is `train.py` which uses tensor flow to train the model with 126 landmark positions. Lastly, I use `classify.py`, which takes probabilities based off landmark orientation of the live feed, the letter with the highest probability gets outputted and then I use the `pyttsx` library to give a voice output of the letter. 
+This is an application that utilizes mediapipe's landmark approach to tracking hands in order to train a neural network to recognize the sign language equivalent of letters of the alphabet. This is done by training a neural network using tensor flow that takes in 126 different landmark positions of the hand. Each letter in the sign language alphabets has 400 samples each, giving us a total of over 10,000 samples. The samples are taken using a script called `test.py` which takes the landmarks and saves each one as a `.npy` file. The next is `train.py` which uses tensor flow to train the model with 126 landmark positions. Lastly, I use `classify.py`, which takes probabilities based off landmark orientation of the live feed, the letter with the highest probability gets outputted and then I use the `pyttsx` library to give a voice output of the letter. The files that I used have been uploaded to the repository, but they have been zipped to save space.
 
 
 ---
@@ -169,3 +169,10 @@ Next, I will refine and integrate the interaction into a final **observant syste
 ## Part 2 — FINAL INTERACTIVE SYSTEM
 
 I've finished traning the model with a couple of hundred more samples from each letter, I have also attempted to introduce a space bar as a delimiter between letters so that participants can try to formulate actual sentences. Participants will also be looking at a chart containing the ASL letters for reference. 
+
+NAME: Frank Xu 
+
+**VIDEO:**
+[Link](https://drive.google.com/file/d/1C19_zkD5Fxb9PHgtMHPaLVOfHrp1GsBx/view?usp=sharing)
+
+**PLEASE NOTE THAT THE RASPBERRY PI IS BEING USED WITH THE GUI, BUT IT IS OUT OF FRAME IN THE VIDEO.**
