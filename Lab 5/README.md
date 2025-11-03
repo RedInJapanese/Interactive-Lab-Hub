@@ -153,7 +153,7 @@ MediaPipe relies on clear contour visibility. Poor lighting or motion blur cause
 | Other properties/behaviors? | Smooth tracking when stable; easy to integrate with physical output devices. |
 | How does it feel? | Bit of a learning curve if you don't know any ASL, apart from that it feels pretty natural  |
 
-**Video Demo:**  
+**VIDEO DEMO:**  
 [Link](https://drive.google.com/file/d/1YkYun_KGj4wul5GSyCUNNDwun6d8GX-s/view?usp=sharing)
 ---
 
@@ -166,6 +166,6 @@ Next, I will refine and integrate the interaction into a final **observant syste
 
 ---
 
-## Part 2 — Final Interactive System (coming next)
+## Part 2 — FINAL INTERACTIVE SYSTEM
 
 I've finished traning the model with a couple of hundred more samples from each letter, I have also attempted to introduce a space bar as a delimiter between letters so that participants can try to formulate actual sentences. Participants will also be looking at a chart containing the ASL letters for reference. 
