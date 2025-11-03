@@ -15,6 +15,9 @@ My observant device uses **computer vision and neural networks** to detect gestu
 
 This is an application that utilizes mediapipe's landmark approach to tracking hands in order to train a neural network to recognize the sign language equivalent of letters of the alphabet. This is done by training a neural network using tensor flow that takes in 126 different landmark positions of the hand. Each letter in the sign language alphabets has 400 samples each, giving us a total of over 10,000 samples. The samples are taken using a script called `test.py` which takes the landmarks and saves each one as a `.npy` file. The next is `train.py` which uses tensor flow to train the model with 126 landmark positions. Lastly, I use `classify.py`, which takes probabilities based off landmark orientation of the live feed, the letter with the highest probability gets outputted and then I use the `pyttsx` library to give a voice output of the letter. The files that I used have been uploaded to the repository, but they have been zipped to save space.
 
+**PLEASE NOTE THAT DUE TO THE FILE SIZE OF THE PROJECT, THE ZIPPED FILES COULD NOT BE COMITTED TO GITHUB, INSTEAD, THEY HAVE BEEN LINKED VIA GOOGLE DRIVE BELOW:**
+[Here](https://drive.google.com/file/d/1YnHHX5w_-IYTIeTJit7NcGgTzFdv6EoN/view?usp=sharing)
+
 <img width="2928" height="1592" alt="image" src="https://github.com/user-attachments/assets/b2ea920c-bab9-440b-9192-c243adef354d" />
 
 
