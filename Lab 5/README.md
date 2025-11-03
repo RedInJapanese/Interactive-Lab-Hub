@@ -1,75 +1,70 @@
-# Observant Systems
+# LAB 5, OBSERVANT SYSTEMS
 
 **Collaborators:** Akash Basu, ab3334
 
 ---
 
-## Overview
+## OVERVIEW:
 
-In this lab, I created an **observant system** — an interactive Raspberry Pi device that can detect and respond to events in its environment.  
+In this lab, I created an **observant system** — an interactive Raspberry Pi device that can detect hands using media pipe and interpret them as ASL(American Sign Lagnauge) gestures.  
 The goal was to explore how different “sense-making” algorithms (vision and ML models) can enable systems that recognize and react to what they see.  
 
-My observant device uses **computer vision and machine learning** to detect motion, gestures, or specific objects, and trigger an action — similar to the "Boat Detector" to detect sign language  
+My observant device uses **computer vision and neural networks** to detect gestures and trigger an action — similar to the "Boat Detector" to detect sign language. 
+
+## TECHNICAL DESCRIPTION:
+
+This is an application that utilizes mediapipe's landmark approach to tracking hands in order to train a neural network to recognize the sign language equivalent of letters of the alphabet. This is done by training a neural network using tensor flow that takes in 126 different landmark positions of the hand. Each letter in the sign language alphabets has 400 samples each, giving us a total of over 10,000 samples. The samples are taken using a script called `test.py` which takes the landmarks and saves each one as a `.npy` file. The next is `train.py` which uses tensor flow to train the model with 126 landmark positions. Lastly, I use `classify.py`, which takes probabilities based off landmark orientation of the live feed, the letter with the highest probability gets outputted and then I use the `pyttsx` library to give a voice output of the letter. 
+
 
 ---
 
 ## Part A — Play with Different Sense-Making Algorithms
 
-### PyTorch Object Recognition (MobileNet v2)
+### PYTORCH OBJECT RECOGNITION
 
 I began by experimenting with **PyTorch’s MobileNet v2** model for real-time object recognition.  
 After installing dependencies and connecting my webcam, I ran `infer.py`, which displayed the top object predictions from the live video feed.
 
-**Observations:**
-- The model correctly recognized common objects like bottles, cups, and keyboards.  
-- Lighting and background strongly affected accuracy.  
-- The first few inferences were slower, but performance stabilized to around 30 fps after initialization.
+**OBSERVATIONS:**
+The model correctly recognized common objects like bottles, cups, and keyboards. The lighting and background strongly affected accuracy(I did not test this on objects with different colors, but I suspect that it would also have some sort of adverse effect on the model depending on both the color and background). Lastly, I noticed that the first few inferences were slower, but performance stabilized to around 30 fps after initialization.
 
-**What I learned:**
-- Pretrained models can classify many object types, but they’re limited to the 1000 categories included in `classes.json`.
-- Real-time inference on a Pi 4 is possible, but frame rate and latency can be an issue.
+**WHAT I LEARNED:**
+Pretrained models can classify many object types, but they’re limited to the 1000 categories included in `classes.json`. Real-time inference on a Pi 4 is possible, but frame rate and latency can be an issue.
 
 ---
 
-### MediaPipe Hand and Pose Tracking
+### MEDIAPIPE HAND AND POSE TRACKING
 
 I explored **MediaPipe**, focusing on hand and pose detection.  
 I used `hand_pose.py` and tested pinch detection** for continuous control (like a percentage slider) and quiet coyote gesture for discrete commands.
 
-**Observations:**
-- Hand tracking was very robust in good lighting.
-- Pinch detection worked best when the hand was near the center of the frame.
-- Gestures could easily trigger events such as adjusting a servo or controlling brightness.
+**OBSERVATIONS:**
+I noticed that hand tracking was very robust in good lighting. Pinch detection worked best when the hand was near the center of the frame. Lastly, gestures could easily trigger events such as adjusting a servo, controlling brightness, or controlling the UI on my laptop.
 
-**Idea for interaction:**
-I considered using MediaPipe’s pinch percentage to control a servo motor or LED brightness — effectively using your hand as a “virtual knob” in the air.
+**IDEA FOR INTERACTION:**
+I propose using the gesture features of MediaPipe in order to detect ASL gestures. A tts package for python will be used to output the letters to audio. For tests, I will have new users attempt to spell their own names in ASL. 
 
 ---
 
-###Teachable Machines Custom Classifier
+### TEACHABLE MACHINES CUSTOM CLASSIFIER
 
-To test a more customizable approach, I trained a model using **Google’s Teachable Machines**.  
-I built a simple image classifier to recognize:
+I trained a model using **Google’s Teachable Machines** in order to test a more customizable approach. I made a basic image classifier to recognize:
 1. **Hand up**  
 2. **Hand down**  
 3. **Background / nothing**
 
-I collected ~20 samples per class, trained the model, and exported it as a TensorFlow Lite model (`.tflite` + `labels.txt`).  
+I collected ~50 samples per class, trained the model, and exported it as a TensorFlow Lite model (`.tflite` + `labels.txt`).  
 After uploading it to the Pi, I ran `tml_example.py` to test live classification.
 
-**Observations:**
-- The model worked well under normal lighting(room lighting, afternoon).
-- distinguished between “hand up” and “hand down” pretty quickly.
-- More sensitive to background changes than MediaPipe.
+**OBSERVATIONS:**
+The model worked well under normal lighting(room lighting, afternoon). It could distinguish between “hand up” and “hand down” pretty quickly. I also noticed it is more sensitive to background changes than MediaPipe.
 
-**Affordances compared to other methods:**
-- Unlike PyTorch, Teachable Machines allows training on *custom categories*.
-- Easier for rapid prototyping of specific recognition tasks.
-- Slightly slower and less robust than MediaPipe for motion-heavy inputs, but far simpler to deploy.
+**AFFORDANCES COMPARED TO OTHER METHODS:**
+Unlike PyTorch, Teachable Machines allows training on *custom categories*. I also found it easier for rapid prototyping of specific recognition tasks. There is also a slightly slower and less robust than MediaPipe for motion-heavy inputs, but far simpler to deploy.
 
 ---
 
-### Summary of Algorithm Comparisons
+### SUMMARY OF ALGORITHM COMPARISOONS
 
 | Tool | Input Type | Strengths | Weaknesses |
 |------|-------------|------------|-------------|
@@ -79,63 +74,65 @@ After uploading it to the Pi, I ran `tml_example.py` to test live classification
 
 ---
 
-## Part B — Construct a Simple Interaction
+## Part B — CONSTRUCT A SIMPLE INTERACTION
 
 For my prototype, I used **MediaPipe hand tracking**.
 
-### Concept: “Air Dimmer” — Hand-Controlled Light Brightness
+### CONCEPT: "pose detection sign language" - using pose tracking to detect ASL gestures
 
-The system uses **pinch distance** from MediaPipe to control the brightness of an LED connected to the Raspberry Pi.
+The system landmark detection from Mediapipe to track the orientation of the hands for each letter of the alphabet. As mentioned above, `classify.py` is used in order to compare the live feed with the model generated from the training samples with the different ASL letters.
 
-- **Input:** Hand pinch percentage detected from the webcam feed.
-- **Processing:** The system maps pinch distance (0–1) to LED brightness (0–255 PWM).
-- **Output:** The LED dims or brightens in real time as you pinch and release.
+- **Input:** Hand gestures from a live feed.
+- **Processing:** The system uses the probabilities from the model to see which letter the gesture is most likely to be .
+- **Output:** The left hand corner will show the letter and also output it to standard output and TTS(text-to-speech).
 
-**Experimentation:**
-- Works well under stable lighting.
-- Very intuitive to control — feels like turning a virtual knob in midair.
-- Pinch percentage occasionally jumped when the hand was partially out of frame, causing flicker.
+**EXPERIMENTATION:**
+Results vary depending on lighting. Because so many letters have similarities to one another, I had to invent gestures as replacements. Some gestures will overlap with one another due to similarity(eg.) 'h' and 'r' can be similar depending on the orientation). Very intuitive to control. Some letters are very difficult to obtain unless I spin the gesture itself around slightly. 
 
-**Improvements to consider:**
-- Apply smoothing or hysteresis to stabilize LED brightness.
-- Add visual feedback (e.g., on-screen bar) to show brightness level.
+**VIDEO:**
+- [Link](https://drive.google.com/file/d/19AzcspkMD5oyL5rGPes8NpyeTScMbbDv/view?usp=sharing)
+
+**IMPROVEMENTS TO CONSIDER:**
+- Use more landmarks to train the model with, will increase accuracy.
+- Use a darker background to test the model with
+- Maybe try testing with different skin tones?
 
 ---
 
-## Part C — Test the Interaction Prototype
+## Part C — TEST THE INTERACTION
 
-### Observations and Results
+### OBSERVATIONS AND RESULTS
 
 | Condition | Result | Notes |
 |------------|---------|-------|
 | Bright indoor light |  Accurate | MediaPipe detected hand easily |
-| Dim lighting | Some misclassifications | Model lost hand landmarks |
-| Moving background | Flicker | Background motion confused detection |
+| Similar signs for letters | Some misclassifications | Model lost hand landmarks for the letter 'r' |
+| Darker background |  Slight Difficulty | Background motion confused detection |
 | Hand partially off-screen | Failure | Detection dropped or jumped |
 
-**When it works:**  
+**WHEN IT WORKS:**  
 When the hand is well-lit, centered, and within 50 cm of the camera.
 
-**When it fails:**  
-Low light, partial occlusion, or fast hand movements.
+**WHEN IT FAILS:**  
+Low light, similar gestures, ambigious orientation.
 
-**Why it fails:**  
+**WHY IT FAILS:**  
 MediaPipe relies on clear contour visibility. Poor lighting or motion blur causes landmark loss.
 
 ---
 
-### Thinking from the User’s Perspective
+### THINKING FROM THE USER'S PERSPECTIVE
 
-- **Are they aware of uncertainties?**  
+- **ARE THEY AWARE OF UNCERTAINTIES?**  
   Likely not — users may not understand why brightness flickers.
   
-- **How bad is a misclassification?**  
-  Not severe (LED flickers), but annoying.
+- **HOW BAD IS MISCLASSIFICATION?**  
+  Not severe, but annoying(similar hand signs as mentioned prior) .
 
-- **How to address it?**  
-  Add smoothing filters or display feedback (like “hand not detected” message).
-
-- **Possible optimizations:**  
+- **HOW TO ADDRESS IT?**
+  Increase landmark threshold to 130 to increase accuracy
+  
+- **POSSIBLE OPTIMIZATIONS:**  
   - Lower camera resolution for faster FPS.  
   - Adjust MediaPipe confidence threshold.  
   - Implement temporal averaging for more stable output.
@@ -151,22 +148,24 @@ MediaPipe relies on clear contour visibility. Poor lighting or motion blur cause
 | What can you use it for? | Gesture-based controls (lights, motors, menus). |
 | What is a good environment for it? | Well-lit, uncluttered backgrounds, steady camera. |
 | What is a bad environment for it? | Dim or flickering light, complex motion backgrounds. |
-| When will it break? | If the hand moves too fast, or exits the frame. |
-| How will it break? | Landmarks disappear; output jumps or freezes. |
+| When will it break? | If there are similar hand signs, unclear hand orientation, or poor lighting. |
+| How will it break? | Landmarks disappear; Similar model probabilities in `classify.py`. |
 | Other properties/behaviors? | Smooth tracking when stable; easy to integrate with physical output devices. |
-| How does it feel? | Natural and futuristic — like interacting with an invisible interface. |
+| How does it feel? | Bit of a learning curve if you don't know any ASL, apart from that it feels pretty natural  |
 
 **Video Demo:**  
-https://drive.google.com/file/d/11zAG8wEilezNKS5cS4qRo5x8ATkNMcsk/view?usp=sharing 
+[Link](https://drive.google.com/file/d/1YkYun_KGj4wul5GSyCUNNDwun6d8GX-s/view?usp=sharing)
 ---
 
-## Summary 
+## SUMMARY
 
 By experimenting with different sensing libraries, I developed an understanding of how computer vision tools differ in flexibility, robustness, and responsiveness.  
-My prototype — the **Air Dimmer** — demonstrates how real-time hand tracking can control a physical device, but also highlights challenges like lighting and stability.  
+My prototype demonstrates how real-time hand tracking can be userd to interpret ASL and highlights challenges like lighting and stability.  
 
 Next, I will refine and integrate the interaction into a final **observant system** and demonstrate it in use.
 
 ---
 
 ## Part 2 — Final Interactive System (coming next)
+
+I've finished traning the model with a couple of hundred more samples from each letter, I have also attempted to introduce a space bar as a delimiter between letters so that participants can try to formulate actual sentences. Participants will also be looking at a chart containing the ASL letters for reference. 
