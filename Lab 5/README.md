@@ -95,6 +95,8 @@ Results vary depending on lighting. Because so many letters have similarities to
 **VIDEO:**
 - [Link](https://drive.google.com/file/d/19AzcspkMD5oyL5rGPes8NpyeTScMbbDv/view?usp=sharing)
 
+<img width="2430" height="1290" alt="image" src="https://github.com/user-attachments/assets/df6a92b0-7229-4c87-a8e7-8bc4eef720ff" />
+
 **IMPROVEMENTS TO CONSIDER:**
 - Use more landmarks to train the model with, will increase accuracy.
 - Use a darker background to test the model with
