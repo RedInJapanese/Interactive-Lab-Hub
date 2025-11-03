@@ -180,4 +180,7 @@ NAME: Frank Xu
 **VIDEO:**
 [Link](https://drive.google.com/file/d/1C19_zkD5Fxb9PHgtMHPaLVOfHrp1GsBx/view?usp=sharing)
 
+<img width="2326" height="1260" alt="image" src="https://github.com/user-attachments/assets/59fd859b-a3a8-4b6d-bfd4-e03fd54a068a" />
+
+
 **PLEASE NOTE THAT THE RASPBERRY PI IS BEING USED WITH THE GUI, BUT IT IS OUT OF FRAME IN THE VIDEO.**
